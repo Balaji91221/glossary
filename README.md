@@ -32,15 +32,45 @@ components/
 ├── Glossary.js     search + category/layer filtering + highlighting
 └── Sections.js     learning path, toolkit, footer
 data/
-├── taxonomy.js     16 categories, 8 layers, alias resolution
-├── terms-a/b/c.js  the 289 terms, split for readability
+├── taxonomy.js     16 categories, 8 layers
+├── terms/          one file per category, each exporting TERMS
+├── route.js        the learning path, with term slugs
+├── slug.js         the one slug function shared by site, validator, exporter
 ├── toolkit.js      what library for what, with the reason attached
-└── index.js        merges, slugs and builds the search index
+└── index.js        merges, slugs, search fields and related-term links
+lib/
+└── search.js       ranked search (name > alias > definition > body)
 scripts/
-└── export-markdown.mjs   validates every entry, renders the manual to markdown
+├── validate.mjs    checks every entry against docs/style-guide.md (`npm test`)
+├── planned-terms.json   terms scheduled for v2, by category
+├── slugs-v2.txt    every slug a `see` link may point at
+└── export-markdown.mjs  renders the manual to markdown
 docs/
-└── field-manual.md       generated — the whole manual as one readable file
+├── style-guide.md  the entry standard: seven fields, rules, levels, idioms
+├── PLAN-modify-glossary-v2.md   the v2 blueprint
+└── field-manual.md generated — the whole manual as one readable file
 ```
+
+## v2 status (in progress)
+
+Version 2 upgrades every entry from three fields to seven: definition,
+**plain words**, **example**, where it goes wrong, in depth, **related
+terms** and a **level** (Foundation / Working / Advanced). The standard is
+written in `docs/style-guide.md`; the plan is in `docs/PLAN-modify-glossary-v2.md`.
+
+Done so far:
+
+- Data split into one file per category (lossless; 289 terms unchanged).
+- Validator (`npm test`) with a per-file mode: `node scripts/validate.mjs --only ai`.
+- Ranked search helper, shared slug function, learning-path slugs.
+- Three exemplar entries in the v2 shape: Idempotency, N+1 query, Hallucination.
+- 108 missing terms identified by scanning definitions for undefined words
+  (client/server, latency, pod, kernel, tenant, WAL, join, middleware …);
+  listed in `scripts/planned-terms.json`.
+
+Not done yet: the other 286 entries still lack `plain`, `example`, `see`
+and `level`, so `npm test` currently reports those as errors by design. The
+site builds and runs unchanged. The UI for the new fields is not built yet.
 
 ## Adding a term
 

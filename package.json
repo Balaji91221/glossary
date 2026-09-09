@@ -1,6 +1,6 @@
 {
   "name": "the-engineers-field-manual",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,6 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "node scripts/validate.mjs",
+    "validate": "node scripts/validate.mjs",
     "export:md": "node scripts/export-markdown.mjs"
   },
   "dependencies": {
@@ -18,5 +20,8 @@
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.5"
+  },
+  "engines": {
+    "node": ">=18.17"
   }
 }

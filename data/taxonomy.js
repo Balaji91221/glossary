@@ -44,11 +44,10 @@ export const LAYERS = {
   },
 };
 
-// A handful of terms are tagged with a category id as their layer; map them.
-export const LAYER_ALIASES = { api: "edge" };
-
+// Safe lookup: an unknown id falls back to Craft rather than crashing a
+// render. The validator rejects unknown ids before they reach the site.
 export function resolveLayer(id) {
-  return LAYERS[LAYER_ALIASES[id] || id] || LAYERS.craft;
+  return LAYERS[id] || LAYERS.craft;
 }
 
 export const CATEGORIES = [

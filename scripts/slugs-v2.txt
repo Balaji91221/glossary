@@ -1,0 +1,430 @@
+# Every slug you may use in `see`. Format: slug | term | category | status
+
+## structure — Project structure
+repository | Repository | structure | exists
+root | Root | structure | exists
+entry-point | Entry point | structure | exists
+source-vs-build | Source vs build | structure | exists
+module | Module | structure | exists
+package-manifest | Package manifest | structure | exists
+lockfile | Lockfile | structure | exists
+constraints-file | Constraints file | structure | exists
+transitive-dependency | Transitive dependency | structure | exists
+vendoring | Vendoring | structure | exists
+virtual-environment | Virtual environment | structure | exists
+makefile | Makefile | structure | exists
+layered-structure | Layered structure | structure | exists
+repository-pattern | Repository pattern | structure | exists
+schema-vs-model | Schema vs model | structure | exists
+feature-first-vs-type-first | Feature-first vs type-first | structure | exists
+absolute-vs-relative-path | Absolute vs relative path | structure | exists
+dotfile | Dotfile | structure | exists
+readme | README | structure | exists
+dependency | Dependency | structure | PLANNED (being written now)
+command-line-interface | Command-line interface | structure | PLANNED (being written now)
+
+## async — Workers, queues & scheduling
+synchronous-request | Synchronous request | async | exists
+worker | Worker | async | exists
+queue | Queue | async | exists
+producer-consumer | Producer / consumer | async | exists
+enqueue | Enqueue | async | exists
+task | Task | async | exists
+scheduler | Scheduler | async | exists
+run-exactly-one-scheduler | Run exactly one scheduler | async | exists
+cron-expression | Cron expression | async | exists
+priority-queue | Priority queue | async | exists
+backpressure | Backpressure | async | exists
+idempotency | Idempotency | async | exists
+exponential-backoff | Exponential backoff | async | exists
+jitter | Jitter | async | exists
+dead-letter-queue | Dead letter queue | async | exists
+poison-message | Poison message | async | exists
+fan-out | Fan-out | async | exists
+pass-ids-not-objects | Pass IDs, not objects | async | exists
+visibility-timeout | Visibility timeout | async | exists
+at-least-once-vs-exactly-once | At-least-once vs exactly-once | async | exists
+heartbeat | Heartbeat | async | exists
+chunking-long-jobs | Chunking long jobs | async | exists
+debounce-vs-throttle | Debounce vs throttle | async | exists
+daemon | Daemon | async | exists
+acknowledgement | Acknowledgement | async | PLANNED (being written now)
+pub-sub | Pub/sub | async | PLANNED (being written now)
+topic-partition-offset | Topic, partition & offset | async | PLANNED (being written now)
+consumer-group | Consumer group | async | PLANNED (being written now)
+transactional-outbox | Transactional outbox | async | PLANNED (being written now)
+retry | Retry | async | PLANNED (being written now)
+
+## lifecycle — Process lifecycle
+signal | Signal | lifecycle | exists
+sigterm | SIGTERM | lifecycle | exists
+sigkill | SIGKILL | lifecycle | exists
+graceful-shutdown | Graceful shutdown | lifecycle | exists
+draining | Draining | lifecycle | exists
+grace-period | Grace period | lifecycle | exists
+exit-code | Exit code | lifecycle | exists
+oom-kill | OOM kill | lifecycle | exists
+pid-1 | PID 1 | lifecycle | exists
+zombie-process | Zombie process | lifecycle | exists
+orphan-process | Orphan process | lifecycle | exists
+liveness-probe | Liveness probe | lifecycle | exists
+readiness-probe | Readiness probe | lifecycle | exists
+restart-policy | Restart policy | lifecycle | exists
+cold-start | Cold start | lifecycle | exists
+health-check | Health check | lifecycle | PLANNED (being written now)
+process-supervisor | Process supervisor | lifecycle | PLANNED (being written now)
+
+## concurrency — Concurrency
+process-vs-thread | Process vs thread | concurrency | exists
+concurrency-vs-parallelism | Concurrency vs parallelism | concurrency | exists
+gil | GIL | concurrency | exists
+blocking-call | Blocking call | concurrency | exists
+event-loop | Event loop | concurrency | exists
+async-await | async / await | concurrency | exists
+race-condition | Race condition | concurrency | exists
+lock-mutex | Lock / mutex | concurrency | exists
+deadlock | Deadlock | concurrency | exists
+distributed-lock | Distributed lock | concurrency | exists
+atomic-operation | Atomic operation | concurrency | exists
+thundering-herd | Thundering herd | concurrency | exists
+idempotency-key | Idempotency key | concurrency | exists
+backpressure-vs-buffering | Backpressure vs buffering | concurrency | exists
+thread-pool | Thread pool | concurrency | PLANNED (being written now)
+semaphore | Semaphore | concurrency | PLANNED (being written now)
+
+## data — Data & state
+transaction | Transaction | data | exists
+acid | ACID | data | exists
+isolation-level | Isolation level | data | exists
+orm | ORM | data | exists
+migration | Migration | data | exists
+index | Index | data | exists
+query-plan | Query plan | data | exists
+n-1-query | N+1 query | data | exists
+connection-pool | Connection pool | data | exists
+optimistic-locking | Optimistic locking | data | exists
+pessimistic-locking | Pessimistic locking | data | exists
+replication | Replication | data | exists
+eventual-consistency | Eventual consistency | data | exists
+sharding | Sharding | data | exists
+normalisation-vs-denormalisation | Normalisation vs denormalisation | data | exists
+soft-delete | Soft delete | data | exists
+cache | Cache | data | exists
+ttl | TTL | data | exists
+cache-invalidation | Cache invalidation | data | exists
+cache-stampede | Cache stampede | data | exists
+blob-storage | Blob storage | data | exists
+backup-vs-snapshot | Backup vs snapshot | data | exists
+data-retention | Data retention | data | exists
+pii | PII | data | exists
+primary-key-foreign-key | Primary key & foreign key | data | PLANNED (being written now)
+constraint | Constraint | data | PLANNED (being written now)
+database-schema | Database schema | data | PLANNED (being written now)
+join | Join | data | PLANNED (being written now)
+relational-vs-document-database | Relational vs document database | data | PLANNED (being written now)
+write-ahead-log | Write-ahead log | data | PLANNED (being written now)
+mvcc | MVCC | data | PLANNED (being written now)
+upsert | Upsert | data | PLANNED (being written now)
+materialised-view | Materialised view | data | PLANNED (being written now)
+table-partitioning | Table partitioning | data | PLANNED (being written now)
+cap-theorem | CAP theorem | data | PLANNED (being written now)
+
+## api — APIs & networking
+rest | REST | api | exists
+graphql | GraphQL | api | exists
+grpc | gRPC | api | exists
+websocket | WebSocket | api | exists
+idempotent-method | Idempotent method | api | exists
+http-status-codes | HTTP status codes | api | exists
+429-too-many-requests | 429 Too Many Requests | api | exists
+authentication-vs-authorization | Authentication vs authorization | api | exists
+jwt | JWT | api | exists
+oauth2 | OAuth2 | api | exists
+session | Session | api | exists
+cors | CORS | api | exists
+preflight-request | Preflight request | api | exists
+webhook | Webhook | api | exists
+polling-vs-long-polling | Polling vs long polling | api | exists
+rate-limiting | Rate limiting | api | exists
+timeout | Timeout | api | exists
+circuit-breaker | Circuit breaker | api | exists
+retry-storm | Retry storm | api | exists
+graceful-degradation | Graceful degradation | api | exists
+pagination | Pagination | api | exists
+api-versioning | API versioning | api | exists
+contract | Contract | api | exists
+load-balancer | Load balancer | api | exists
+reverse-proxy | Reverse proxy | api | exists
+api-gateway | API gateway | api | exists
+dns | DNS | api | exists
+tls-https | TLS / HTTPS | api | exists
+idempotent-retry-budget | Idempotent retry budget | api | exists
+http-request-response | HTTP request & response | api | PLANNED (being written now)
+http-methods | HTTP methods | api | PLANNED (being written now)
+cookie | Cookie | api | PLANNED (being written now)
+server-sent-events | Server-Sent Events | api | PLANNED (being written now)
+etag-conditional-request | ETag & conditional request | api | PLANNED (being written now)
+serialisation | Serialisation | api | PLANNED (being written now)
+load-shedding | Load shedding | api | PLANNED (being written now)
+service-mesh | Service mesh | api | PLANNED (being written now)
+cdn | CDN | api | PLANNED (being written now)
+
+## architecture — Architecture
+monolith | Monolith | architecture | exists
+microservices | Microservices | architecture | exists
+modular-monolith | Modular monolith | architecture | exists
+coupling-vs-cohesion | Coupling vs cohesion | architecture | exists
+stateless-service | Stateless service | architecture | exists
+horizontal-vs-vertical-scaling | Horizontal vs vertical scaling | architecture | exists
+dependency-injection | Dependency injection | architecture | exists
+inversion-of-control | Inversion of control | architecture | exists
+single-source-of-truth | Single source of truth | architecture | exists
+separation-of-concerns | Separation of concerns | architecture | exists
+event-driven-architecture | Event-driven architecture | architecture | exists
+cqrs | CQRS | architecture | exists
+event-sourcing | Event sourcing | architecture | exists
+saga | Saga | architecture | exists
+idempotent-consumer | Idempotent consumer | architecture | exists
+twelve-factor-app | Twelve-Factor App | architecture | exists
+bounded-context | Bounded context | architecture | exists
+anti-corruption-layer | Anti-corruption layer | architecture | exists
+blast-radius | Blast radius | architecture | exists
+bulkhead | Bulkhead | architecture | exists
+client-server | Client-server | architecture | PLANNED (being written now)
+middleware | Middleware | architecture | PLANNED (being written now)
+multi-tenancy | Multi-tenancy | architecture | PLANNED (being written now)
+serverless | Serverless | architecture | PLANNED (being written now)
+ports-and-adapters | Ports and adapters | architecture | PLANNED (being written now)
+strangler-fig | Strangler fig | architecture | PLANNED (being written now)
+command-vs-event | Command vs event | architecture | PLANNED (being written now)
+distributed-system | Distributed system | architecture | PLANNED (being written now)
+
+## pipelines — Data engineering
+etl-vs-elt | ETL vs ELT | pipelines | exists
+batch-vs-streaming | Batch vs streaming | pipelines | exists
+dag | DAG | pipelines | exists
+orchestrator | Orchestrator | pipelines | exists
+backfill | Backfill | pipelines | exists
+idempotent-partition | Idempotent partition | pipelines | exists
+data-warehouse-vs-lake | Data warehouse vs lake | pipelines | exists
+columnar-storage | Columnar storage | pipelines | exists
+schema-drift | Schema drift | pipelines | exists
+data-lineage | Data lineage | pipelines | exists
+data-quality-check | Data quality check | pipelines | exists
+cdc | CDC | pipelines | exists
+watermark | Watermark | pipelines | exists
+windowing | Windowing | pipelines | exists
+fact-dimension-tables | Fact & dimension tables | pipelines | PLANNED (being written now)
+schema-registry | Schema registry | pipelines | PLANNED (being written now)
+incremental-load | Incremental load | pipelines | PLANNED (being written now)
+
+## testing — Testing & quality
+unit-test | Unit test | testing | exists
+integration-test | Integration test | testing | exists
+end-to-end-test | End-to-end test | testing | exists
+test-pyramid | Test pyramid | testing | exists
+mock-stub-fake | Mock / stub / fake | testing | exists
+fixture | Fixture | testing | exists
+flaky-test | Flaky test | testing | exists
+coverage | Coverage | testing | exists
+regression | Regression | testing | exists
+property-based-testing | Property-based testing | testing | exists
+snapshot-test | Snapshot test | testing | exists
+linter-formatter-type-checker | Linter / formatter / type checker | testing | exists
+static-analysis | Static analysis | testing | exists
+test-double-for-time | Test double for time | testing | exists
+test-driven-development | Test-driven development | testing | PLANNED (being written now)
+contract-test | Contract test | testing | PLANNED (being written now)
+load-test | Load test | testing | PLANNED (being written now)
+smoke-test | Smoke test | testing | PLANNED (being written now)
+refactoring | Refactoring | testing | PLANNED (being written now)
+
+## delivery — Git, CI/CD & delivery
+commit | Commit | delivery | exists
+branch | Branch | delivery | exists
+merge-vs-rebase | Merge vs rebase | delivery | exists
+merge-conflict | Merge conflict | delivery | exists
+pull-request | Pull request | delivery | exists
+code-review | Code review | delivery | exists
+cherry-pick | Cherry-pick | delivery | exists
+revert-vs-reset | Revert vs reset | delivery | exists
+bisect | Bisect | delivery | exists
+ci | CI | delivery | exists
+cd | CD | delivery | exists
+artifact | Artifact | delivery | exists
+container-image | Container image | delivery | exists
+multi-stage-build | Multi-stage build | delivery | exists
+rolling-deploy | Rolling deploy | delivery | exists
+blue-green-deploy | Blue-green deploy | delivery | exists
+canary-release | Canary release | delivery | exists
+rollback | Rollback | delivery | exists
+feature-flag | Feature flag | delivery | exists
+semantic-versioning | Semantic versioning | delivery | exists
+infrastructure-as-code | Infrastructure as code | delivery | exists
+environment | Environment | delivery | exists
+trunk-based-development | Trunk-based development | delivery | PLANNED (being written now)
+deploy-vs-release | Deploy vs release | delivery | PLANNED (being written now)
+pod-deployment-service | Pod, Deployment & Service | delivery | PLANNED (being written now)
+
+## ops — Operations & observability
+logs-metrics-traces | Logs, metrics, traces | ops | exists
+structured-logging | Structured logging | ops | exists
+correlation-id | Correlation ID | ops | exists
+percentiles | Percentiles | ops | exists
+cardinality | Cardinality | ops | exists
+sli-slo-sla | SLI / SLO / SLA | ops | exists
+error-budget | Error budget | ops | exists
+observability | Observability | ops | exists
+alert-fatigue | Alert fatigue | ops | exists
+on-call | On-call | ops | exists
+runbook | Runbook | ops | exists
+incident-severity | Incident severity | ops | exists
+blameless-postmortem | Blameless postmortem | ops | exists
+mttr-mtbf | MTTR / MTBF | ops | exists
+chaos-engineering | Chaos engineering | ops | exists
+golden-signals | Golden signals | ops | exists
+latency-vs-throughput | Latency vs throughput | ops | PLANNED (being written now)
+availability | Availability | ops | PLANNED (being written now)
+metric-types | Metric types | ops | PLANNED (being written now)
+log-level | Log level | ops | PLANNED (being written now)
+autoscaling | Autoscaling | ops | PLANNED (being written now)
+toil | Toil | ops | PLANNED (being written now)
+
+## security — Security
+secret | Secret | security | exists
+secret-rotation | Secret rotation | security | exists
+least-privilege | Least privilege | security | exists
+sql-injection | SQL injection | security | exists
+xss | XSS | security | exists
+csrf | CSRF | security | exists
+ssrf | SSRF | security | exists
+hashing-vs-encryption | Hashing vs encryption | security | exists
+salt | Salt | security | exists
+encryption-at-rest-in-transit | Encryption at rest / in transit | security | exists
+principle-of-secure-defaults | Principle of secure defaults | security | exists
+dependency-vulnerability-scan | Dependency vulnerability scan | security | exists
+supply-chain-attack | Supply chain attack | security | exists
+audit-log | Audit log | security | exists
+prompt-injection | Prompt injection | security | exists
+rbac | RBAC | security | PLANNED (being written now)
+api-key | API key | security | PLANNED (being written now)
+mfa | MFA | security | PLANNED (being written now)
+hmac-signature | HMAC signature | security | PLANNED (being written now)
+threat-model | Threat model | security | PLANNED (being written now)
+input-validation | Input validation | security | PLANNED (being written now)
+idor | IDOR | security | PLANNED (being written now)
+secrets-manager | Secrets manager | security | PLANNED (being written now)
+defence-in-depth | Defence in depth | security | PLANNED (being written now)
+vulnerability | Vulnerability | security | PLANNED (being written now)
+jailbreak | Jailbreak | security | PLANNED (being written now)
+
+## systems — Systems & Linux
+stdout-stderr | stdout / stderr | systems | exists
+environment-variable | Environment variable | systems | exists
+file-descriptor | File descriptor | systems | exists
+permissions | Permissions | systems | exists
+symbolic-link | Symbolic link | systems | exists
+pipe-and-redirect | Pipe and redirect | systems | exists
+exit-status-in-shell | Exit status in shell | systems | exists
+memory-rss-vs-virtual | Memory: RSS vs virtual | systems | exists
+swap | Swap | systems | exists
+load-average | Load average | systems | exists
+namespace-and-cgroup | Namespace and cgroup | systems | exists
+port-binding | Port binding | systems | exists
+localhost-vs-0-0-0-0 | Localhost vs 0.0.0.0 | systems | exists
+process | Process | systems | PLANNED (being written now)
+shell-path | Shell & PATH | systems | PLANNED (being written now)
+ssh | SSH | systems | PLANNED (being written now)
+tcp-connection | TCP connection | systems | PLANNED (being written now)
+kernel-system-call | Kernel & system call | systems | PLANNED (being written now)
+volume-mount | Volume & mount | systems | PLANNED (being written now)
+firewall-security-group | Firewall & security group | systems | PLANNED (being written now)
+private-network | Private network | systems | PLANNED (being written now)
+utc-timezones | UTC & timezones | systems | PLANNED (being written now)
+
+## ai — AI & LLM engineering
+token | Token | ai | exists
+context-window | Context window | ai | exists
+temperature | Temperature | ai | exists
+system-prompt | System prompt | ai | exists
+few-shot-prompting | Few-shot prompting | ai | exists
+structured-output | Structured output | ai | exists
+embedding | Embedding | ai | exists
+vector-store | Vector store | ai | exists
+chunking | Chunking | ai | exists
+rag | RAG | ai | exists
+reranking | Reranking | ai | exists
+hybrid-search | Hybrid search | ai | exists
+hallucination | Hallucination | ai | exists
+eval | Eval | ai | exists
+golden-dataset | Golden dataset | ai | exists
+llm-as-judge | LLM-as-judge | ai | exists
+agent | Agent | ai | exists
+guardrails | Guardrails | ai | exists
+streaming | Streaming | ai | exists
+prompt-caching | Prompt caching | ai | exists
+fine-tuning-vs-prompting | Fine-tuning vs prompting | ai | exists
+distillation | Distillation | ai | exists
+token-budget | Token budget | ai | exists
+large-language-model | Large language model | ai | PLANNED (being written now)
+prompt-completion | Prompt & completion | ai | PLANNED (being written now)
+grounding-citations | Grounding & citations | ai | PLANNED (being written now)
+model-routing-fallback | Model routing & fallback | ai | PLANNED (being written now)
+semantic-cache | Semantic cache | ai | PLANNED (being written now)
+mcp | MCP | ai | PLANNED (being written now)
+reasoning-model | Reasoning model | ai | PLANNED (being written now)
+query-rewriting | Query rewriting | ai | PLANNED (being written now)
+llm-observability | LLM observability | ai | PLANNED (being written now)
+knowledge-cutoff | Knowledge cutoff | ai | PLANNED (being written now)
+workflow-vs-agent | Workflow vs agent | ai | PLANNED (being written now)
+
+## ml — ML training
+train-validation-test-split | Train / validation / test split | ml | exists
+overfitting-vs-underfitting | Overfitting vs underfitting | ml | exists
+loss-function | Loss function | ml | exists
+epoch-batch-learning-rate | Epoch / batch / learning rate | ml | exists
+gradient-descent | Gradient descent | ml | exists
+feature-engineering | Feature engineering | ml | exists
+data-leakage | Data leakage | ml | exists
+precision-vs-recall | Precision vs recall | ml | exists
+class-imbalance | Class imbalance | ml | exists
+baseline | Baseline | ml | exists
+inference | Inference | ml | exists
+model-registry | Model registry | ml | exists
+experiment-tracking | Experiment tracking | ml | exists
+drift | Drift | ml | exists
+reproducibility | Reproducibility | ml | exists
+model-parameters-weights | Model, parameters & weights | ml | PLANNED (being written now)
+feature-label | Feature & label | ml | PLANNED (being written now)
+supervised-vs-unsupervised | Supervised vs unsupervised | ml | PLANNED (being written now)
+classification-vs-regression | Classification vs regression | ml | PLANNED (being written now)
+hyperparameter | Hyperparameter | ml | PLANNED (being written now)
+regularisation | Regularisation | ml | PLANNED (being written now)
+calibration | Calibration | ml | PLANNED (being written now)
+transformer | Transformer | ml | PLANNED (being written now)
+pretraining-instruction-tuning-rlhf | Pretraining, instruction tuning & RLHF | ml | PLANNED (being written now)
+quantisation | Quantisation | ml | PLANNED (being written now)
+model-serving | Model serving | ml | PLANNED (being written now)
+a-b-test | A/B test | ml | PLANNED (being written now)
+gpu-vram | GPU & VRAM | ml | PLANNED (being written now)
+feature-store | Feature store | ml | PLANNED (being written now)
+
+## career — Working as an engineer
+technical-debt | Technical debt | career | exists
+yak-shaving | Yak shaving | career | exists
+bikeshedding | Bikeshedding | career | exists
+rubber-duck-debugging | Rubber duck debugging | career | exists
+estimation | Estimation | career | exists
+scope-creep | Scope creep | career | exists
+definition-of-done | Definition of done | career | exists
+design-doc | Design doc | career | exists
+chesterton-s-fence | Chesterton's fence | career | exists
+boy-scout-rule | Boy Scout rule | career | exists
+premature-optimisation | Premature optimisation | career | exists
+bus-factor | Bus factor | career | exists
+conway-s-law | Conway's law | career | PLANNED (being written now)
+adr | ADR | career | PLANNED (being written now)
+sprint | Sprint | career | PLANNED (being written now)
+prototype-vs-production | Prototype vs production | career | PLANNED (being written now)
+spike | Spike | career | PLANNED (being written now)
+dry-yagni-kiss | DRY, YAGNI, KISS | career | PLANNED (being written now)

@@ -345,7 +345,7 @@ Depth alone is ambiguous — 10,000 messages is fine at 5,000/second and a disas
 
 `Application`
 
-The property that running an operation twice produces the same result as running it once.
+The property of an operation that produces the same result whether it runs once or many times.
 
 > Non-negotiable for background work. A worker can crash after charging a card and before recording it, and the retry will charge again unless you designed for this.
 
@@ -859,7 +859,7 @@ Use EXPLAIN (ANALYZE, BUFFERS) — plain EXPLAIN gives estimates, ANALYZE actual
 
 `Data`
 
-Fetching a list, then issuing one more query per item — 101 queries where 2 would do.
+A query pattern that loads a list with one query, then runs one more query for every item in that list.
 
 > Invisible in development with 10 rows, catastrophic in production with 10,000. Fixed by joins or eager loading.
 
@@ -2651,7 +2651,7 @@ The two systems fail in opposite directions: BM25 nails exact tokens (an error c
 
 `Model`
 
-Fluent, confident, wrong output.
+Model output that is fluent and confident but factually wrong or unsupported by any source.
 
 > The core reliability problem. Grounding, citations and verification reduce it; nothing eliminates it.
 

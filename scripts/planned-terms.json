@@ -1,0 +1,143 @@
+{
+  "_comment": "Terms scheduled for addition in v2, by category. Writers may link to any of these in `see` before the entry exists; `npm test -- --only <category>` treats them as pending. Delete this file when every entry exists.",
+  "structure": [
+    { "t": "Dependency" },
+    { "t": "Command-line interface", "aka": "CLI" }
+  ],
+  "async": [
+    { "t": "Acknowledgement", "aka": "ack, nack" },
+    { "t": "Pub/sub", "aka": "publish-subscribe" },
+    { "t": "Topic, partition & offset" },
+    { "t": "Consumer group" },
+    { "t": "Transactional outbox", "aka": "outbox pattern" },
+    { "t": "Retry" }
+  ],
+  "lifecycle": [
+    { "t": "Health check" },
+    { "t": "Process supervisor", "aka": "systemd, supervisord" }
+  ],
+  "concurrency": [
+    { "t": "Thread pool" },
+    { "t": "Semaphore" }
+  ],
+  "data": [
+    { "t": "Primary key & foreign key" },
+    { "t": "Constraint", "aka": "unique constraint, check constraint" },
+    { "t": "Database schema" },
+    { "t": "Join" },
+    { "t": "Relational vs document database", "aka": "SQL vs NoSQL" },
+    { "t": "Write-ahead log", "aka": "WAL" },
+    { "t": "MVCC", "aka": "multi-version concurrency control" },
+    { "t": "Upsert" },
+    { "t": "Materialised view" },
+    { "t": "Table partitioning" },
+    { "t": "CAP theorem" }
+  ],
+  "api": [
+    { "t": "HTTP request & response" },
+    { "t": "HTTP methods", "aka": "GET, POST, PUT, PATCH, DELETE" },
+    { "t": "Cookie" },
+    { "t": "Server-Sent Events", "aka": "SSE" },
+    { "t": "ETag & conditional request" },
+    { "t": "Serialisation", "aka": "JSON, Protobuf" },
+    { "t": "Load shedding" },
+    { "t": "Service mesh", "aka": "sidecar, Envoy, mTLS" },
+    { "t": "CDN", "aka": "content delivery network" }
+  ],
+  "architecture": [
+    { "t": "Client-server" },
+    { "t": "Middleware" },
+    { "t": "Multi-tenancy", "aka": "tenant" },
+    { "t": "Serverless", "aka": "FaaS, Lambda" },
+    { "t": "Ports and adapters", "aka": "hexagonal architecture, clean architecture" },
+    { "t": "Strangler fig" },
+    { "t": "Command vs event" },
+    { "t": "Distributed system" }
+  ],
+  "pipelines": [
+    { "t": "Fact & dimension tables", "aka": "star schema" },
+    { "t": "Schema registry", "aka": "data contract" },
+    { "t": "Incremental load", "aka": "full refresh vs incremental" }
+  ],
+  "testing": [
+    { "t": "Test-driven development", "aka": "TDD" },
+    { "t": "Contract test" },
+    { "t": "Load test", "aka": "performance test" },
+    { "t": "Smoke test" },
+    { "t": "Refactoring" }
+  ],
+  "delivery": [
+    { "t": "Trunk-based development" },
+    { "t": "Deploy vs release" },
+    { "t": "Pod, Deployment & Service", "aka": "Kubernetes primitives" }
+  ],
+  "ops": [
+    { "t": "Latency vs throughput" },
+    { "t": "Availability", "aka": "nines, uptime" },
+    { "t": "Metric types", "aka": "counter, gauge, histogram" },
+    { "t": "Log level" },
+    { "t": "Autoscaling", "aka": "HPA" },
+    { "t": "Toil" }
+  ],
+  "security": [
+    { "t": "RBAC", "aka": "role-based access control, IAM policy" },
+    { "t": "API key" },
+    { "t": "MFA", "aka": "multi-factor authentication, 2FA" },
+    { "t": "HMAC signature" },
+    { "t": "Threat model", "aka": "attack surface" },
+    { "t": "Input validation" },
+    { "t": "IDOR", "aka": "insecure direct object reference" },
+    { "t": "Secrets manager", "aka": "KMS, Vault" },
+    { "t": "Defence in depth" },
+    { "t": "Vulnerability", "aka": "CVE" },
+    { "t": "Jailbreak" }
+  ],
+  "systems": [
+    { "t": "Process", "aka": "PID, fork, exec" },
+    { "t": "Shell & PATH" },
+    { "t": "SSH" },
+    { "t": "TCP connection", "aka": "socket, handshake, TIME_WAIT" },
+    { "t": "Kernel & system call", "aka": "syscall" },
+    { "t": "Volume & mount" },
+    { "t": "Firewall & security group" },
+    { "t": "Private network", "aka": "VPC, subnet" },
+    { "t": "UTC & timezones" }
+  ],
+  "ai": [
+    { "t": "Large language model", "aka": "LLM" },
+    { "t": "Prompt & completion" },
+    { "t": "Grounding & citations" },
+    { "t": "Model routing & fallback" },
+    { "t": "Semantic cache" },
+    { "t": "MCP", "aka": "Model Context Protocol" },
+    { "t": "Reasoning model", "aka": "chain-of-thought, thinking tokens" },
+    { "t": "Query rewriting", "aka": "HyDE" },
+    { "t": "LLM observability", "aka": "LLM tracing" },
+    { "t": "Knowledge cutoff" },
+    { "t": "Workflow vs agent" }
+  ],
+  "ml": [
+    { "t": "Model, parameters & weights" },
+    { "t": "Feature & label" },
+    { "t": "Supervised vs unsupervised" },
+    { "t": "Classification vs regression" },
+    { "t": "Hyperparameter" },
+    { "t": "Regularisation", "aka": "dropout, early stopping" },
+    { "t": "Calibration" },
+    { "t": "Transformer", "aka": "attention" },
+    { "t": "Pretraining, instruction tuning & RLHF" },
+    { "t": "Quantisation" },
+    { "t": "Model serving", "aka": "vLLM" },
+    { "t": "A/B test" },
+    { "t": "GPU & VRAM" },
+    { "t": "Feature store" }
+  ],
+  "career": [
+    { "t": "Conway's law" },
+    { "t": "ADR", "aka": "architecture decision record" },
+    { "t": "Sprint", "aka": "standup, retro, backlog" },
+    { "t": "Prototype vs production", "aka": "MVP" },
+    { "t": "Spike" },
+    { "t": "DRY, YAGNI, KISS" }
+  ]
+}
