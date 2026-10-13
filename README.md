@@ -120,3 +120,7 @@ the **In depth** passage, which is reference, not alarm.
 
 Press `/` anywhere to focus search, `Esc` to clear. Search covers the depth
 passages too, so a match may be waiting inside a collapsed panel.
+
+---
+
+Explore more of my work: [latest open-source tools](https://github.com/Balaji91221#latest-open-source-tools) · [recent projects](https://github.com/Balaji91221#recent-work).
