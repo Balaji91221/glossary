@@ -9,6 +9,24 @@ wrong in production, and — behind an **In depth** toggle — the mechanism
 underneath, with the numbers, flags and failure modes attached. The second and
 third parts are the ones that are usually missing.
 
+[Get started](#run-it) · [Architecture](#architecture) · [Contribute](#adding-a-term)
+
+## Why this exists
+
+Engineering vocabulary is easier to remember when it is connected to a failure you can recognize. This manual pairs definitions with operational consequences and deeper explanations, giving learners and working engineers a reference they can search while reading code or debugging systems.
+
+## Architecture
+
+```mermaid
+flowchart LR
+  Terms[Category files] --> Index[Shared data index]
+  Index --> UI[Next.js glossary and filters]
+  Index --> Validator[Entry validator]
+  Index --> Export[Markdown exporter]
+```
+
+The site, validator, and exporter share one data index, so term slugs, categories, and related links have a common source of truth.
+
 ## Run it
 
 ```bash
@@ -47,7 +65,6 @@ scripts/
 └── export-markdown.mjs  renders the manual to markdown
 docs/
 ├── style-guide.md  the entry standard: seven fields, rules, levels, idioms
-├── PLAN-modify-glossary-v2.md   the v2 blueprint
 └── field-manual.md generated — the whole manual as one readable file
 ```
 
@@ -56,7 +73,7 @@ docs/
 Version 2 upgrades every entry from three fields to seven: definition,
 **plain words**, **example**, where it goes wrong, in depth, **related
 terms** and a **level** (Foundation / Working / Advanced). The standard is
-written in `docs/style-guide.md`; the plan is in `docs/PLAN-modify-glossary-v2.md`.
+written in the [entry style guide](docs/style-guide.md).
 
 Done so far:
 
@@ -74,7 +91,7 @@ site builds and runs unchanged. The UI for the new fields is not built yet.
 
 ## Adding a term
 
-Append to any `terms-*.js` file:
+Add an entry to the appropriate file in `data/terms/`. The example below shows the original entry shape; new entries should also follow the v2 fields in the [style guide](docs/style-guide.md):
 
 ```js
 {
